@@ -7,17 +7,15 @@ A tool that leverages the API of https://psbdmp.ws/ to find any text dumped in p
 ```
 $ ./scrape.sh 
 Usage:
-Search for domains - ./script.sh -d domain.com
-Search for emails  - ./script.sh -e foo@bar.com
 General search	   - ./script.sh -g foobar
 ```
 
 ## Example 
 
 ``` 
-$ ./scrape.sh -d facebook.com
+$ ./scrape.sh -g foobar
 Searching pastebin...
-Task completed. Output present in ./output/domain/facebook.com/
+Saving in ./output/general/foobar/results.txt
 ```
 
 ## Installation
