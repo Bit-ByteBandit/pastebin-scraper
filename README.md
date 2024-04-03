@@ -1,6 +1,6 @@
 # pastebin-scraper
 
-A tool that leverages the API of https://psbdmp.ws/ to find emails and domains dumped in pastebin which could lead to finding some juicy information.
+A tool that leverages the API of https://psbdmp.ws/ to find any text dumped in pastebin which could lead to finding some juicy information.
 
 ## Usage
 
@@ -27,13 +27,13 @@ $ git clone https://github.com/streaak/pastebin-scraper.git
 $ cd pastebin-scraper
 $ sudo chmod +x ./scrape.sh
 $ sudo apt-get install jq
-$ mkdir -p output/domain/ output/email/ output/general/
+$ mkdir output/general/
 ```
 
 ## Output
 
 
-Outputs will either be stored in `./output/domain`, `./output/email` or `./output/general depending` depending on what you search for. The output will contain 2 files, `output.json` and `urls.txt`. `output.json` will contain the original json returned by the API in a beautified format and `urls.txt` will contain the URLs returned by the API in text format.
+Outputs will be stored in `./output/general`. The output will contain 2 files, `results.json` and `urls.txt`. `results.json` will contain the dumped text value returned by the API and `urls.txt` will contain the URLs returned by the API.
 
 ## TODO
 
